@@ -1,8 +1,8 @@
 {
   "id": "neostation",
   "name": "NeoStation",
-  "author": "Miguel Soto",
-  "version": "0.3.9",
+  "author": "Misoba",
+  "version": "0.4.0",
   "description": "The default theme for NeoStation.",
   "ai": false
 }
