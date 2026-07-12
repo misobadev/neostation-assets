@@ -1,24 +1,24 @@
-Welcome to the official **NeoStation** assets repository. Here you can find and contribute new visual styles to customize your gaming experience.
+Welcome to the official **NeoStation** assets repository. Here you can find and contribute new visual styles to customize system art.
 
 ## Repository Structure
 
 The structure is designed to be modular and easy to navigate for both humans and the application:
-* `themes/`: Contains all individual theme folders.
+* `themes/`: Contains all individual system art folders.
 * `preview/`: Global screenshots for the catalog display.
-* `manifest.json`: Main index used by the app to list available themes.
+* `manifest.json`: Main index used by the app to list available system arts.
 
 ---
 
-## How to Create a Theme
+## How to Create a System Art
 
 ### 1. Folder Setup
 Create a new folder inside `themes/` with a descriptive name (e.g., `Matrix-Green`).
 
 ### 2. The `theme.json` File
-Each theme must include a `theme.json` file with metadata:
+Each system art must include a `theme.json` file with metadata:
 ```json
 {
-  "id": "my-unique-theme",
+  "id": "my-unique-art",
   "name": "Visual Name",
   "author": "Your Name",
   "version": "1.0.0",
@@ -34,20 +34,20 @@ To ensure optimal performance on handheld and Android devices, please follow the
 #### **Backgrounds**
 * **Format:** Must be **.webp** (optimized) or **.gif** (animated).
 * **Resolution:** Exactly **1024 x 1024** px.
-* **Location:** `themes/[your-theme]/backgrounds/`
+* **Location:** `themes/[your-art]/backgrounds/`
 * **Naming:** `[shortname].[extension]` (e.g., `gba.webp`, `ps1.gif`).
 * **Fallback:** Always include a `default.webp` for unspecified systems.
 
-#### **Logos**
+#### **Logos (Optional if you need custom logos)**
 * **Format:** **.webp** (with transparency).
-* **Resolution:** Exactly **746 x 374** px.
-* **Location:** `themes/[your-theme]/logos/`
+* **Resolution:** Exactly **800 x 380** px.
+* **Location:** `themes/[your-art]/logos/`
 * **Naming:** Must match the system `shortname` (e.g., `snes.png`).
 
 ## Publishing
-Once your theme is ready, ensure you:
+Once your system art is ready, ensure you:
 1. Add a screenshot to the `preview/` folder.
-2. Register your theme in the `manifest.json` file at the root.
+2. Register your system art in the `manifest.json` file at the root.
 3. Open a Pull Request.
 
 ## Legal Information and Licensing
